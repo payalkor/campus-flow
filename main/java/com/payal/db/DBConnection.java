@@ -4,9 +4,9 @@ import java.sql.*;
 public class DBConnection {
     public static Connection getConnection(){
         try{
-            Connection c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/campusflow",
-                    "postgres",
-                    "postgreuser");
+            Connection c=DriverManager.getConnection("url",
+                    "your_username",
+                    "your_pass");
 
             return c;
 
